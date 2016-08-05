@@ -32,7 +32,6 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <repositoryName>aem-reports-components</repositoryName>
         <repositoryOwner>isobaraustralia</repositoryOwner>
-        <github.global.oauth2Token>b6c2e429b2b8674643fb9720c79ee89807961740</github.global.oauth2Token>
     </properties>
 
     <scm>
