@@ -7,10 +7,10 @@
 
     <groupId>isobar-aem</groupId>
     <artifactId>aem-reports</artifactId>
-    <version>0.0</version>
+    <version>0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Report on Components in AEM - Reactor Project</name>
+    <name>Report on Components in AEM - Parent Project</name>
     <description>Maven Multimodule project for Report on Components in AEM.</description>
 
     <prerequisites>
@@ -33,9 +33,9 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
-    <!--<scm>-->
-        <!--<developerConnection>scm:svn:https://svn.mycompany.com/repos/myapplication/trunk/mycomponent/</developerConnection>-->
-    <!--</scm>    -->
+    <scm>
+        <developerConnection>scm:git:git://github.com/isobaraustralia/aem-reports-components</developerConnection>
+    </scm>
 
     <dependencyManagement>
         <dependencies>
