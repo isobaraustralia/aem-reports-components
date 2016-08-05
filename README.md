@@ -1,7 +1,8 @@
 Report on Components in AEM
 ========
 
-[ ![Download](https://api.bintray.com/packages/isobaraustralia/maven/aem-reports-components/images/download.svg) ](https://bintray.com/isobaraustralia/maven/aem-reports-components/_latestVersion)
+[![Build Status](https://travis-ci.org/isobaraustralia/aem-reports-components.svg?branch=master)](https://travis-ci.org/isobaraustralia/aem-reports-components)
+[![Download](https://api.bintray.com/packages/isobaraustralia/maven/aem-reports-components/images/download.svg) ](https://bintray.com/isobaraustralia/maven/aem-reports-components/_latestVersion)
 
 
 This package adds custom report and report components that enable listing of component in AEM.
