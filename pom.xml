@@ -7,7 +7,7 @@
 
     <groupId>isobar-aem</groupId>
     <artifactId>aem-reports</artifactId>
-    <version>0.4-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <name>Report on Components in AEM - Parent Project</name>

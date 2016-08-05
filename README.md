@@ -98,12 +98,9 @@ mvn --batch-mode -DautoVersionSubmodules=true release:clean release:prepare rele
 
 To set a specific version:
 ```bash
-export majorVersion=0; \
-export minorVersion=1; \
-export incrementalVersion=1; \
-mvn build-helper:parse-version \
-    versions:set \ 
-    -DnewVersion=${majorVersion}.${minorVersion}.${incrementalVersion} \
-    versions:commit
+export majorVersion=1; \
+export minorVersion=0; \
+export incrementalVersion=0; \
+mvn build-helper:parse-version versions:set -DnewVersion=${majorVersion}.${minorVersion}.${incrementalVersion} versions:commit
 ```
 Source: https://blog.codecentric.de/en/2015/01/continuous-delivery-microservices-jenkins-job-dsl-plugin/
