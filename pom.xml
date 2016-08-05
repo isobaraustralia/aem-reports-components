@@ -30,12 +30,23 @@
         <publish.crx.password>admin</publish.crx.password>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <repositoryName>aem-reports-components</repositoryName>
+        <repositoryOwner>isobaraustralia</repositoryOwner>
+        <github.global.oauth2Token>b6c2e429b2b8674643fb9720c79ee89807961740</github.global.oauth2Token>
     </properties>
 
     <scm>
         <developerConnection>scm:git:git://github.com/isobaraustralia/aem-reports-components</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>internal.repo</id>
+            <name>Temporary Staging Repository</name>
+            <url>file://${project.build.directory}/mvn-repo</url>
+        </repository>
+    </distributionManagement>
 
     <dependencyManagement>
         <dependencies>
@@ -99,6 +110,12 @@
                 <version>4.8.1</version>
                 <scope>test</scope>
             </dependency>
+
+            <dependency>
+                <groupId>com.github.github</groupId>
+                <artifactId>site-maven-plugin</artifactId>
+                <version>0.11</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -107,8 +124,6 @@
         It would be best if you proxied the Adobe repository using a Maven
         Repository Manager. Once you do that, remove these sections.
      -->
-
-
     <repositories>
         <!--
         <repository>
@@ -145,7 +160,14 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
-
+        <repository>
+            <id>aem-reports-components-mvn-repo</id>
+            <url>https://raw.github.com/isobaraustralia/aem-reports-components/mvn-repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
     </repositories>
 
     <pluginRepositories>
@@ -191,6 +213,41 @@
     <build>
         <pluginManagement>
             <plugins>
+                <!-- PREP FOR DEPLOY TO GITHIB -->
+                <plugin>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>2.8.1</version>
+                    <configuration>
+                        <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
+                    </configuration>
+                </plugin>
+                <!-- DEPLOY TO GITHIB -->
+                <plugin>
+                    <groupId>com.github.github</groupId>
+                    <artifactId>site-maven-plugin</artifactId>
+                    <version>0.11</version>
+                    <configuration>
+                        <message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
+                        <noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
+                        <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
+                        <branch>refs/heads/mvn-repo</branch>                       <!-- remote branch name -->
+                        <includes><include>**/*</include></includes>
+                        <repositoryName>${repositoryName}</repositoryName>      <!-- github repo name -->
+                        <repositoryOwner>${repositoryOwner}</repositoryOwner>    <!-- github username  -->
+                        <host>api.github.com</host>
+                        <oauth2Token>${github.global.oauth2Token}</oauth2Token>
+                    </configuration>
+                    <executions>
+                        <!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
+                        <execution>
+                            <goals>
+                                <goal>site</goal>
+                            </goals>
+                            <phase>deploy</phase>
+                        </execution>
+                    </executions>
+                </plugin>
+
                 <plugin>
                     <groupId>org.apache.felix</groupId>
                     <artifactId>maven-scr-plugin</artifactId>
