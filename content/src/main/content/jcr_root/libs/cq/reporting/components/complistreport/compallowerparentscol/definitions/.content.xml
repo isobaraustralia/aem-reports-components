@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    groupable="{Boolean}true"
+    type="string">
+    <queryBuilder
+        jcr:primaryType="nt:unstructured"
+        property="[allowedParents]"/>
+    <filters jcr:primaryType="cq:WidgetCollection">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            filterType="string"
+            id="filter"/>
+    </filters>
+    <aggregates jcr:primaryType="cq:WidgetCollection">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            text="Count"
+            type="count-nonempty"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            text="List"
+            type="list"/>
+    </aggregates>
+</jcr:root>

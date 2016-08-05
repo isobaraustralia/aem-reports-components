@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>FileVault Package Properties</comment>
+<entry key="createdBy">admin</entry>
+<entry key="name">aem-reports-components</entry>
+<entry key="lastModified">2016-08-05T10:30:45.671+10:00</entry>
+<entry key="lastModifiedBy">admin</entry>
+<entry key="created">2016-08-05T10:30:45.763+10:00</entry>
+<entry key="buildCount">30</entry>
+<entry key="version">1.0</entry>
+<entry key="dependencies"/>
+<entry key="packageFormatVersion">2</entry>
+<entry key="description">&lt;h1&gt;Report on Components in AEM&lt;/h1&gt;&#13;
+&lt;p&gt;This package adds custom report and report components that enable listing of component in AEM.&lt;/p&gt;&#13;
+&lt;br /&gt;&#13;
+&lt;div class="details-ct"&gt;&#13;
+&lt;/div&gt;&#13;
+&lt;h2&gt;New Report List&lt;/h2&gt;&#13;
+&lt;ul style="list-style-type: decimal-leading-zero;padding-left: 25.0px;"&gt;&#13;
+&lt;li&gt;&lt;b&gt;Component Group List Report&lt;/b&gt; - show grouping of reports by category for tracking&lt;/li&gt;&#13;
+&lt;li&gt;&lt;b&gt;Component List Report&lt;/b&gt; - show list of all reports for tracking &lt;/li&gt;&#13;
+&lt;li&gt;&lt;b&gt;Component List&lt;/b&gt; - show list of all components for export &lt;/li&gt;&#13;
+&lt;/ul&gt;&#13;
+&lt;br /&gt;&#13;
+&lt;h2&gt;New Report Template&lt;/h2&gt;&#13;
+&lt;ul style="list-style-type: decimal-leading-zero;padding-left: 25.0px;"&gt;&#13;
+&lt;li&gt;&lt;b&gt;Component List Report Template&lt;/b&gt; - use this report generator to create a new Component List reports&lt;/li&gt;&#13;
+&lt;/ul&gt;&#13;
+&lt;br /&gt;&#13;
+&lt;h2&gt;New Report Components&lt;/h2&gt;&#13;
+&lt;ul style="list-style-type: decimal-leading-zero;padding-left: 25.0px;"&gt;&#13;
+&lt;li&gt;&lt;b&gt;Component Group&lt;/b&gt; - component category group&lt;/li&gt;&#13;
+&lt;li&gt;&lt;b&gt;Description&lt;/b&gt; - component description&lt;/li&gt;&#13;
+&lt;li&gt;&lt;b&gt;Title&lt;/b&gt; - component title&lt;/li&gt;&#13;
+&lt;li&gt;&lt;b&gt;Has Classic Dialog&lt;/b&gt; - does component have classic dialog&lt;/li&gt;&#13;
+&lt;li&gt;&lt;b&gt;Has Classic Dialog Design&lt;/b&gt; - does component have classic design dialog&lt;/li&gt;&#13;
+&lt;li&gt;&lt;b&gt;Has Dialog&lt;/b&gt; - does component have touchui dialog&lt;/li&gt;&#13;
+&lt;li&gt;&lt;b&gt;Has Embedded ClientLibs&lt;/b&gt; - does component have local clientlibs&lt;/li&gt;&#13;
+&lt;li&gt;&lt;b&gt;Has Icon&lt;/b&gt; - does component have an icon&lt;/li&gt;&#13;
+&lt;li&gt;&lt;b&gt;Last Modified&lt;/b&gt; - last time component was modified&lt;/li&gt;&#13;
+&lt;li&gt;&lt;b&gt;Resource Type&lt;/b&gt; - type of component&lt;/li&gt;&#13;
+&lt;li&gt;&lt;b&gt;Sling Resource Super Type&lt;/b&gt; - which component is being inherited&lt;/li&gt;&#13;
+&lt;li&gt;&lt;b&gt;Sling Resource Type&lt;/b&gt; - which service being triggered for this component&lt;/li&gt;&#13;
+&lt;li&gt;&lt;b&gt;Allowed Parents&lt;/b&gt; - paths where component is allowed to be used&lt;/li&gt;&#13;
+&lt;li&gt;&lt;b&gt;Component Path&lt;/b&gt; - component location&lt;/li&gt;&#13;
+&lt;/ul&gt;&#13;
+&lt;br /&gt;&#13;
+&lt;br /&gt;&#13;
+&lt;p&gt;&lt;i&gt;By Max Barrass @ Isobar Australia&lt;/i&gt;&lt;/p&gt;&lt;br /&gt;&#13;
+</entry>
+<entry key="group">isobar/aem/reporting</entry>
+<entry key="path">/etc/packages/isobar/aem/reporting/aem-reports-components-content-1.0.zip</entry>
+</properties>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="Use this report generator to create a new Component List report."
+    jcr:primaryType="cq:Template"
+    jcr:title="Component List Report Template"
+    allowedPaths="[/etc/reports(/.*)?]"
+    ranking="{Long}100"
+    shortTitle="Component List Report">
+    <jcr:content
+        cq:designPath="/etc/designs/reports/complistreport"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="cq/reporting/components/reportpage">
+        <report
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="cq/reporting/components/compreport/compreport"
+            repVersion="{Long}1"/>
+    </jcr:content>
+</jcr:root>

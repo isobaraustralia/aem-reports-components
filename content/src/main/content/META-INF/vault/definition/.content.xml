@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    sling:resourceType="cq/packaging/components/pack/definition"
+    jcr:description="&lt;h1>Report on Components in AEM&lt;/h1>&#xd;&#xa;&lt;p>This package adds custom report and report components that enable listing of component in AEM.&lt;/p>&#xd;&#xa;&lt;br />&#xd;&#xa;&lt;div class=&quot;details-ct&quot;>&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;h2>New Report List&lt;/h2>&#xd;&#xa;&lt;ul style=&quot;list-style-type: decimal-leading-zero;padding-left: 25.0px;&quot;>&#xd;&#xa;&lt;li>&lt;b>Component Group List Report&lt;/b> - show grouping of reports by category for tracking&lt;/li>&#xd;&#xa;&lt;li>&lt;b>Component List Report&lt;/b> - show list of all reports for tracking &lt;/li>&#xd;&#xa;&lt;li>&lt;b>Component List&lt;/b> - show list of all components for export &lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;br />&#xd;&#xa;&lt;h2>New Report Template&lt;/h2>&#xd;&#xa;&lt;ul style=&quot;list-style-type: decimal-leading-zero;padding-left: 25.0px;&quot;>&#xd;&#xa;&lt;li>&lt;b>Component List Report Template&lt;/b> - use this report generator to create a new Component List reports&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;br />&#xd;&#xa;&lt;h2>New Report Components&lt;/h2>&#xd;&#xa;&lt;ul style=&quot;list-style-type: decimal-leading-zero;padding-left: 25.0px;&quot;>&#xd;&#xa;&lt;li>&lt;b>Component Group&lt;/b> - component category group&lt;/li>&#xd;&#xa;&lt;li>&lt;b>Description&lt;/b> - component description&lt;/li>&#xd;&#xa;&lt;li>&lt;b>Title&lt;/b> - component title&lt;/li>&#xd;&#xa;&lt;li>&lt;b>Has Classic Dialog&lt;/b> - does component have classic dialog&lt;/li>&#xd;&#xa;&lt;li>&lt;b>Has Classic Dialog Design&lt;/b> - does component have classic design dialog&lt;/li>&#xd;&#xa;&lt;li>&lt;b>Has Dialog&lt;/b> - does component have touchui dialog&lt;/li>&#xd;&#xa;&lt;li>&lt;b>Has Embedded ClientLibs&lt;/b> - does component have local clientlibs&lt;/li>&#xd;&#xa;&lt;li>&lt;b>Has Icon&lt;/b> - does component have an icon&lt;/li>&#xd;&#xa;&lt;li>&lt;b>Last Modified&lt;/b> - last time component was modified&lt;/li>&#xd;&#xa;&lt;li>&lt;b>Resource Type&lt;/b> - type of component&lt;/li>&#xd;&#xa;&lt;li>&lt;b>Sling Resource Super Type&lt;/b> - which component is being inherited&lt;/li>&#xd;&#xa;&lt;li>&lt;b>Sling Resource Type&lt;/b> - which service being triggered for this component&lt;/li>&#xd;&#xa;&lt;li>&lt;b>Allowed Parents&lt;/b> - paths where component is allowed to be used&lt;/li>&#xd;&#xa;&lt;li>&lt;b>Component Path&lt;/b> - component location&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;br />&#xd;&#xa;&lt;br />&#xd;&#xa;&lt;p>&lt;i>By Max Barrass @ Isobar Australia&lt;/i>&lt;/p>&lt;br />&#xd;&#xa;"
+    jcr:primaryType="vlt:PackageDefinition"
+    buildCount="30"
+    builtWith="Adobe Experience Manager-6.2.0"
+    fixedBugs=""
+    cqVersion="6.2.0"
+    group="isobar/aem/reporting"
+    lastUnwrapped="{Date}2016-08-05T10:30:45.671+10:00"
+    lastUnwrappedBy="admin"
+    lastWrapped="{Date}2016-08-05T10:30:45.671+10:00"
+    lastWrappedBy="admin"
+    name="aem-reports-components"
+    providerLink="https://www.adobeaemcloud.com/content/packageshare.html"
+    providerName="Isobar Australia"
+    providerUrl="http://www.isobar.com/au/en/"
+    testedWith="AEM 6.2"
+    path="/etc/packages/isobar/aem/reporting/aem-reports-components-content-1.0"
+    version="1.0">
+    <thumbnail.png/>
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/libs/cq/reporting/templates/complistreport"
+            rules="[]"/>
+        <f1
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/libs/cq/reporting/components/complistreport"
+            rules="[]"/>
+        <f2
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/etc/designs/reports/complistreport"
+            rules="[]"/>
+        <f3
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/etc/reports/compgrouplistreport"
+            rules="[]"/>
+        <f4
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/etc/reports/complistreport"
+            rules="[]"/>
+        <f5
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/libs/cq/reporting/components/complist"
+            rules="[]"/>
+        <f6
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/etc/reports/complist"
+            rules="[]"/>
+    </filter>
+    <screenshots jcr:primaryType="nt:unstructured">
+        <_x0039_25e5d95-4507-48f4-abc2-65abd8b0cd58 jcr:primaryType="nt:unstructured">
+            <file/>
+        </_x0039_25e5d95-4507-48f4-abc2-65abd8b0cd58>
+        <_x0031_7c8052d-b354-4f50-81bf-6fe65ff8423f jcr:primaryType="nt:unstructured">
+            <file/>
+        </_x0031_7c8052d-b354-4f50-81bf-6fe65ff8423f>
+        <_x0030_4da937b-ef4f-4c24-97cf-3bd0dc2dff2c jcr:primaryType="nt:unstructured">
+            <file/>
+        </_x0030_4da937b-ef4f-4c24-97cf-3bd0dc2dff2c>
+        <_x0038_4358d26-707c-479b-a9af-e34610486e5c jcr:primaryType="nt:unstructured">
+            <file/>
+        </_x0038_4358d26-707c-479b-a9af-e34610486e5c>
+        <_x0036_98526e5-8e9f-4420-8091-9a264b667f67 jcr:primaryType="nt:unstructured">
+            <file/>
+        </_x0036_98526e5-8e9f-4420-8091-9a264b667f67>
+        <d80474b2-d22c-413b-afac-55d4bddf037b jcr:primaryType="nt:unstructured">
+            <file/>
+        </d80474b2-d22c-413b-afac-55d4bddf037b>
+        <_x0038_8a48424-809f-41ff-a5d6-2a5ec8e38501 jcr:primaryType="nt:unstructured">
+            <file/>
+        </_x0038_8a48424-809f-41ff-a5d6-2a5ec8e38501>
+        <b665a86a-16d3-4ebc-95a3-a3ac1683b7cb jcr:primaryType="nt:unstructured">
+            <file/>
+        </b665a86a-16d3-4ebc-95a3-a3ac1683b7cb>
+        <_x0032_14d4913-7a72-4da2-9106-5f1545bed9ec jcr:primaryType="nt:unstructured">
+            <file/>
+        </_x0032_14d4913-7a72-4da2-9106-5f1545bed9ec>
+    </screenshots>
+</jcr:root>

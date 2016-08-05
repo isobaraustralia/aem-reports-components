@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    groupable="{Boolean}false"
+    type="string">
+    <queryBuilder
+        jcr:primaryType="nt:unstructured"
+        property="jcr:path"/>
+    <data
+        jcr:primaryType="nt:unstructured"
+        clientFilter="function(v) { var sepPos = v.lastIndexOf('/jcr:content'); if (sepPos &lt; 0) {return v; } return v.substring(sepPos + '/jcr:content'.length, v.length); }"/>
+</jcr:root>

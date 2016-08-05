@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <settings jcr:primaryType="nt:unstructured">
+        <active jcr:primaryType="cq:WidgetCollection">
+            <_x0030_
+                jcr:primaryType="nt:unstructured"
+                id="pie"/>
+            <_x0031_
+                jcr:primaryType="nt:unstructured"
+                id="lineseries"/>
+        </active>
+    </settings>
+    <definitions jcr:primaryType="cq:WidgetCollection">
+        <_x0030_
+            jcr:primaryType="nt:unstructured"
+            id="pie"
+            maxRadius="{Long}180"
+            type="pie"/>
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            id="lineseries"
+            type="lineseries"/>
+    </definitions>
+</jcr:root>

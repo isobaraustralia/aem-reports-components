@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/reports/complistreport"
+        cq:lastModified="{Date}2016-08-04T11:04:25.191+10:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/cq/reporting/templates/complistreport"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Component Group List Report"
+        jcr:uuid="c4d41438-d257-4acd-b798-8d7313641841"
+        sling:resourceType="cq/reporting/components/reportpage">
+        <report
+            jcr:lastModified="{Date}2010-04-28T13:58:16.494+02:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="cq/reporting/components/complistreport/complistreport"
+            hideRootPath="true"
+            pathSplitPoint="/jcr:content/"
+            processing="server-interactive"
+            rootPath="/"
+            snapshots="never"
+            sortColumn="2"
+            sortDirection="DESC">
+            <columns
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/reporting/components/repparsys">
+                <componentgroup
+                    jcr:created="{Date}2016-08-04T11:03:14.019+10:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2016-08-04T11:03:14.019+10:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/reporting/components/complistreport/componentgroup">
+                    <settings
+                        jcr:primaryType="nt:unstructured"
+                        grouped="true">
+                        <sorting
+                            jcr:primaryType="nt:unstructured"
+                            direction="ASC"
+                            sorted="{Boolean}true"/>
+                    </settings>
+                </componentgroup>
+                <comppathcol
+                    jcr:created="{Date}2016-08-04T10:54:29.594+10:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2016-08-04T10:54:29.594+10:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/reporting/components/complistreport/comppathcol">
+                    <settings jcr:primaryType="nt:unstructured"/>
+                </comppathcol>
+            </columns>
+        </report>
+    </jcr:content>
+</jcr:root>

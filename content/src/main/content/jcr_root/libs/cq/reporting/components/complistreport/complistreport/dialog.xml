@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="{Long}424">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <props jcr:primaryType="cq:Panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/cq/reporting/components/commons/title.infinity.json"
+                    xtype="cqinclude"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/cq/reporting/components/commons/description.infinity.json"
+                    xtype="cqinclude"/>
+                <rootPath
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Root path"
+                    name="./report/rootPath"
+                    xtype="pathfield"/>
+                <processing
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/cq/reporting/components/commons/processing.infinity.json"
+                    xtype="cqinclude"/>
+                <scheduling
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/cq/reporting/components/commons/scheduling.infinity.json"
+                    xtype="cqinclude"/>
+            </items>
+        </props>
+    </items>
+</jcr:root>

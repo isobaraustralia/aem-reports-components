@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    groupable="{Boolean}false"
+    type="date">
+    <queryBuilder
+        jcr:primaryType="nt:unstructured"
+        property="[jcr:lastModified,jcr:created]"/>
+    <aggregates jcr:primaryType="cq:WidgetCollection">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            text="Minimum"
+            type="min"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            text="Maximum"
+            type="max"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            text="Average"
+            type="average"/>
+    </aggregates>
+    <data jcr:primaryType="nt:unstructured">
+        <preprocessing jcr:primaryType="nt:unstructured">
+            <applyAfter jcr:primaryType="nt:unstructured">
+                <aggregated
+                    jcr:primaryType="nt:unstructured"
+                    format="datedelta"/>
+            </applyAfter>
+        </preprocessing>
+    </data>
+</jcr:root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/libs/cq/reporting/templates/complistreport"/>
+    <filter root="/libs/cq/reporting/components/complistreport"/>
+    <filter root="/etc/designs/reports/complistreport"/>
+    <filter root="/etc/reports/compgrouplistreport"/>
+    <filter root="/etc/reports/complistreport"/>
+    <filter root="/libs/cq/reporting/components/complist"/>
+    <filter root="/etc/reports/complist"/>
+</workspaceFilter>
