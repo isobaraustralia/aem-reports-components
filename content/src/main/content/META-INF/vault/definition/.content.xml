@@ -8,16 +8,12 @@
     fixedBugs=""
     cqVersion="6.2.0"
     group="isobar/aem/reporting"
-    lastUnwrapped="{Date}2016-08-05T10:30:45.671+10:00"
-    lastUnwrappedBy="admin"
-    lastWrapped="{Date}2016-08-05T10:30:45.671+10:00"
-    lastWrappedBy="admin"
     name="aem-reports-components"
-    providerLink="https://www.adobeaemcloud.com/content/packageshare.html"
+    providerLink="https://github.com/isobaraustralia/aem-reports-components"
     providerName="Isobar Australia"
     providerUrl="http://www.isobar.com/au/en/"
     testedWith="AEM 6.2"
-    path="/etc/packages/isobar/aem/reporting/aem-reports-components-content-1.0"
+    path="/etc/packages/isobar/aem/reporting/aem-reports-components-1.0"
     version="1.0">
     <thumbnail.png/>
     <filter jcr:primaryType="nt:unstructured">

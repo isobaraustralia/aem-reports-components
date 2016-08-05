@@ -106,3 +106,4 @@ mvn build-helper:parse-version \
     -DnewVersion=${majorVersion}.${minorVersion}.${incrementalVersion} \
     versions:commit
 ```
+Source: https://blog.codecentric.de/en/2015/01/continuous-delivery-microservices-jenkins-job-dsl-plugin/

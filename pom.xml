@@ -11,7 +11,6 @@
     <packaging>pom</packaging>
 
     <name>Report on Components in AEM - Parent Project</name>
-    <description>Maven Multimodule project for Report on Components in AEM.</description>
 
     <prerequisites>
         <maven>3.0.2</maven>
