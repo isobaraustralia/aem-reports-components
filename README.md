@@ -101,6 +101,6 @@ To set a specific version:
 export majorVersion=1; \
 export minorVersion=0; \
 export incrementalVersion=0; \
-mvn build-helper:parse-version versions:set -DnewVersion=${majorVersion}.${minorVersion}.${incrementalVersion} versions:commit
+mvn build-helper:parse-version versions:set -DnewVersion=${majorVersion}.${minorVersion}.${incrementalVersion} versions:commit deploy scm:tag
 ```
 Source: https://blog.codecentric.de/en/2015/01/continuous-delivery-microservices-jenkins-job-dsl-plugin/
