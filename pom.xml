@@ -7,7 +7,7 @@
 
     <groupId>isobar-aem</groupId>
     <artifactId>aem-reports</artifactId>
-    <version>0.0-SNAPSHOT</version>
+    <version>0.0</version>
     <packaging>pom</packaging>
 
     <name>Report on Components in AEM - Parent Project</name>
@@ -35,7 +35,8 @@
 
     <scm>
         <developerConnection>scm:git:git://github.com/isobaraustralia/aem-reports-components</developerConnection>
-    </scm>
+      <tag>aem-reports-0.0</tag>
+  </scm>
 
     <dependencyManagement>
         <dependencies>
@@ -281,7 +282,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore/>
+                                        <ignore />
                                     </action>
                                 </pluginExecution>
                             </pluginExecutions>
