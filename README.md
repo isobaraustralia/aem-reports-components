@@ -93,7 +93,7 @@ Sometimes it is desirable to do the commit/tag process on a regular interval (e.
 
 To use the default inputs for the versions and tag information and not prompt for any values, use Maven's --batch-mode setting:
 ```bash
-mvn --batch-mode -DautoVersionSubmodules=true release:clean release:prepare
+mvn --batch-mode -DautoVersionSubmodules=true release:clean release:prepare release:perfrom 
 ```
 
 To set a specific version:
