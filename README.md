@@ -95,3 +95,14 @@ To use the default inputs for the versions and tag information and not prompt fo
 ```bash
 mvn --batch-mode release:prepare
 ```
+
+To set a specific version:
+```bash
+export majorVersion=0; \
+export minorVersion=1; \
+export incrementalVersion=1; \
+mvn build-helper:parse-version \
+    versions:set \ 
+    -DnewVersion=${majorVersion}.${minorVersion}.${incrementalVersion} \
+    versions:commit
+```
