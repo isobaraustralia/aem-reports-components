@@ -77,6 +77,28 @@ mvn -Dcrx.host=otherhost -Dcrx.port=5502 clean install
 Release
 --------------
 
+To be able to do releases for thi project you will require permissions to 
+- Git Hub (source code), and
+- Bintray (artifacts)
+
+To deploy artifacts to Bintray you will need to:
+- setup a Master Key for you Maven in ~/.m2/settings-security.xml, and
+```bash
+echo "<settingsSecurity><master>$(read -s -p 'Input master password:' MPASS ; mvn -q --encrypt-master-password "$MPASS")</master></settingsSecurity>">~/.m2/settings-security.xml
+```
+
+- create an encrypted Bintray password using your API key from Bintray in ~/.m2/settings.xml
+```bash
+export BINTRAY_USER="~~~YOUR~~USERNAME~~~"; \
+export BINTRAY_APIKEY="~~~YOUR~~APIKEY~~~"; \
+export BINTRAY_MAVEN_CONFIG_SEARCH="<server><id>bintray-isobaraustralia-maven<\/id><username>$BINTRAY_USER<\/username><password>.*<\/password><\/server>"; \
+export BINTRAY_MAVEN_CONFIG="<server><id>bintray-isobaraustralia-maven<\/id><username>$BINTRAY_USER<\/username><password>API Key: $(mvn -q --encrypt-password ${BINTRAY_APIKEY})<\/password><\/server>"; \
+(grep -q "$BINTRAY_MAVEN_CONFIG_SEARCH" ~/.m2/settings.xml || (echo "Inserting..."; sed -i "/<\/servers>/i $BINTRAY_MAVEN_CONFIG" ~/.m2/settings.xml;)); \
+(grep -q "$BINTRAY_MAVEN_CONFIG" ~/.m2/settings.xml || (echo "Updating..."; sed -i "s|${BINTRAY_MAVEN_CONFIG_SEARCH}|${BINTRAY_MAVEN_CONFIG}|g" ~/.m2/settings.xml;))
+```
+NOTE: New entry for server will be added before </servers> tag in settings file.
+
+
 #### Do a Dry Run
 Since the Release Plugin performs a number of operations that change the project, it may be wise to do a dry run before a big release or on a new project.
 
